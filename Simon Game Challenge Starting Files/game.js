@@ -17,6 +17,7 @@ function startGame() {
     playSound(randomChosenColour);
     gamePattern.push(randomChosenColour);
     gameStarted = true;
+    gameIsOver = false;
   }
 }
 
