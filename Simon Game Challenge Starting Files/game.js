@@ -68,7 +68,7 @@ function endGame() {
   gamePattern = [];
   playSound("wrong");
   gameIsOver = true;
-  
+  $(".btn").prop("disabled", true);
 }
 
 function playSound(sound) {
@@ -105,6 +105,7 @@ $(".btn").on("click", function () {
     
     if (gameIsOver == true){
       playSound("wrong");
+
       
     }
     else{
